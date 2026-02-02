@@ -2,9 +2,10 @@
   "name": "ws-project",
   "version": "1.0.0",
   "description": "Nah! First gonna build this then say stuffs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "dependencies": {
     "express": "^5.2.1",
     "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "@types/ws": "^8.18.1"
   }
 }
