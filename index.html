@@ -71,6 +71,7 @@
 
             if(socket.readyState !== WebSocket.OPEN){
                 appendLog('[ERROR]', 'No active tunnel found.');
+                return;
             }
 
             const msg = input.value.trim();
