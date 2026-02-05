@@ -8,4 +8,5 @@ export const pool = new pg.Pool({
     connectionString: process.env.DATABASE_URL,
 });
 
-export default db = drizzle(pool);
+const db = drizzle(pool);
+export default db;
